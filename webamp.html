@@ -1,0 +1,72 @@
+<script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+<div style="position:absolute; top:0px; left:0px;">
+	<div id="winamp-container"></div>
+    <script>
+const Winamp = window.Webamp;
+// All configuration options are optional.
+const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+            metaData: {
+                artist: "N",
+                title: "creep (shoegaze cover)",
+            },
+            url: "/m/creep.mp3",
+        },
+        {
+            metaData: {
+                artist: "giles corey",
+                title: "i'm going to do it",
+            },
+            url: "/m/do_it.mp3",
+        },
+        {
+            metaData: {
+                artist: "quannnic",
+                title: "life imitates life",
+            },
+            url: "/m/life.mp3",
+        },
+        {
+            metaData: {
+                artist: "anger issues",
+                title: "ether",
+            },
+            url: "/m/ether.mp3",
+        },
+        {
+            metaData: {
+                artist: "marilyn manson",
+                title: "minute of decay (slowed)",
+            },
+            url: "/m/decay.mp3",
+        },
+        {
+            metaData: {
+                artist: "deftones",
+                title: "digital bath (acoustic)",
+            },
+            url: "/m/bath.mp3",
+        },
+        {
+            metaData: {
+                artist: "alex g",
+                title: "end song",
+            },
+            url: "/m/end.mp3",
+        },
+      ],
+    initialSkin: {
+        url: "/m/PAPER.wsz"
+    },
+});
+webamp.renderWhenReady(document.getElementById('winamp-container'));
+</script>
+</div>
+
+<style>
+    body {
+        overflow: hidden;
+    }
+</style>

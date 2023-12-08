@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: url("/img/HOVcur.png"), auto;
+}
+
+body {
+    background: #304645;
+    background-image: url("/img/cornerL.png"), url("/img/cornerR.png"), url("/img/castleL.png"), url("/img/castleR.png"), url("/img/back.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: top left, top right, bottom left, bottom right, top left;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+}
+
+.container {
+    background: #647870;
+    background-image: url("/img/bgswirl.png");
+    width: 900px;
+    margin: auto auto;
+    padding: 7px;
+    border: 1px black solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#header {
+    background: white;
+    background-image: url("/img/header.png");
+    width: 883px;
+    height: 125px;
+    padding: 6px 7px;
+    border: 1px black solid;
+}
+
+.banner {
+    width: 900px;
+    height: 25px;
+    margin: 7px 0px;
+}
+#banL {
+    float: left;
+    background: white;
+    width: 38.85%;
+    height: 32px;
+    padding: 2px 3.3px;
+    padding-top: 3px;
+    border: 1px black solid;
+}
+#banM {
+    float: left;
+    background: white;
+    width: 17%;
+    height: 100%;
+    padding: 6px 7px;
+    border: 1px black solid;
+    margin: 0px 7px;
+}
+#banR {
+    float: left;
+    background: white;
+    width: 38.85%;
+    height: 32px;
+    padding: 2px 3.3px;
+    padding-top: 3px;
+    border: 1px black solid;
+}
+
+.one {
+    width: 900px;
+    height: 500px;
+    margin: 21px 0px;
+}
+#oneL {
+    float: left;
+    background: white;
+    background-image: url("/img/cafeteria.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 17%;
+    height: 100%;
+    padding: 6px 7px;
+    border: 1px black solid;
+}
+#oneM {
+    float: left;
+    background: white;
+    width: 38%;
+    height: 100%;
+    padding: 3px 7px 9px 7px;
+    border: 1px black solid;
+    margin: 0px 7px;
+}
+#oneM b{
+    text-decoration: 1px underline #9eb3ad;
+    text-underline-offset: 3px;
+}
+#oneR {
+    float: left;
+    background: white;
+    width: 38%;
+    height: 100%;
+    padding: 3px 7px 9px 7px;
+    border: 1px black solid;
+}
+
+.two {
+    width: 900px;
+    height: 500px;
+    margin: 21px 0px;
+}
+#twoL {
+    float: left;
+    background: white;
+    width: 38%;
+    height: 100%;
+    padding: 3px 7px 9px 7px;
+    border: 1px black solid;
+    margin-right: 7px;
+}
+#twoT {
+    float: left;
+    background: white;
+    width: 57.6%;
+    height: 47.4%;
+    padding: 7px;
+    border: 1px black solid;
+    margin-bottom: 7px;
+}
+#twoB {
+    float: left;
+    background: white;
+    width: 59.2%;
+    height: 50.3%;
+    border: 1px black solid;
+    overflow: hidden;
+}
+#twoBin {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#Binside{
+    height: 100%;
+    width: 800%;
+}
+#Binside img {
+    height: 240px;
+}
+#Binside img:hover {
+    cursor: url("/img/BRWcur.png"), auto;
+}
+
+#status {
+    float:left;
+    background: #c0d3ce;
+    width: 59.8%;
+    height: 35%;
+    padding: 4px;
+    margin-right: 250px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+#statin {
+    background: rgb(255, 255, 255);
+    width: 96.7%;
+    height: 88%;
+    padding: 4px;
+    border: 1px solid black;
+}
+#statin b{
+    text-decoration: 1px underline #9eb3ad;
+    text-underline-offset: 3px;
+}
+#update {
+    width: 81%;
+}
+
+.three {
+    width: 900px;
+    height: 348px;
+    margin: 21px 0px;
+    margin-bottom: 14px;
+}
+#threeL {
+    float: left;
+    background-color: white;
+    background-image: url('/img/sigilside2.png'), url('/img/ditherBL.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, bottom right;
+    width: 47.8%;
+    height: 100%;
+    padding: 6px 7px;
+    border: 1px black solid;
+    margin-right: 7px;
+    line-height: 29px;
+}
+#threeR {
+    float: left;
+    background: white;
+    width: 47.8%;
+    height: 100%;
+    padding: 6px 7px;
+    border: 1px black solid;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #41555130;*/
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lightbox-content {
+    max-width: 95%;
+    max-height: 95%;
+    animation: fadeInDown 0.7s ease-in-out; /* Added animation property */
+    background-color: white;
+    box-shadow: 0px 0px 1px white, 0px 0px 2px white, 0px 0px 5px white, 0px 0px 10px white, 0px 0px 15px white, 0px 0px 25px white, 0px 0px 30px #415551;
+}
+
+#andre {
+    cursor: url("/img/BRWcur.png"), auto;
+}
+#calvin {
+    cursor: url("/img/BRWcur.png"), auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #708680;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+}
+a:hover {
+    color: #415551;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px #8ab4a9, 0px 0px 4px #8ab4a9cc;
+    transition: ease-in-out 0.3s;
+    cursor: url("/img/BRWcur.png"), auto;
+}
+ul {
+    list-style-position: inside;
+    list-style-image: url("/img/ditherB.png");
+}
+li:nth-child(even) {
+    list-style-image: url("/img/ditherB2.png");
+}
+hr {
+    height: 5px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    border-top: 1px dotted #000000;
+}
+::selection {
+    color: #32413d;
+    background: #d5e9e4;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #32413d;
+    background: #d5e9e4;
+}
+
+
+
+.tippy-box[data-theme~='tomato'] {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last:center;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: white;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: black;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: black;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: black;
+  }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/light.css">
+    <title>Simple Lightbox</title>
+</head>
+<body>
+
+    <div class="gallery">
+        <img src="/img/angel.png" alt="Image 1" onclick="openLightbox('/img/angelbig.png')">
+        <img src="/img/smile.png" alt="Image 2" onclick="openLightbox('/img/smilebig.png')">
+        <!-- Add more thumbnail images as needed -->
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Lightbox Image">
+    </div>
+    <script src="/light.js"></script>
+</body>
+</html>
