@@ -10,6 +10,7 @@ body {
     background-image: url("/img/cornerL.png"), url("/img/cornerR.png"), url("/img/castleL.png"), url("/img/castleR.png"), url("/img/back.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
     background-position: top left, top right, bottom left, bottom right, top left;
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     text-justify: inter-word;
     text-align-last: left;
