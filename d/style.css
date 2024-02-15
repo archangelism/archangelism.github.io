@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: url("/img/TOOTHcur.png"), auto;
+}
+@font-face{
+    font-family: 'labelle';
+    src: url("/f/labelle.ttf");
+}
+
+body {
+    font-family: 'labelle';
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    line-height: 22px;
+    cursor: url("/img/THOVcur.png"), auto;
+    padding: 8px;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: initial;
+}
+
+p {
+    margin-top: 19px;
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: url("/img/HOVcur.png"), auto;
+}
+
+body {
+    background: #304645;
+    background-image: url("/img/cornerL.png"), url("/img/cornerR.png"), url("/img/castleL.png"), url("/img/castleR.png"), url("/img/back.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: top left, top right, bottom left, bottom right, top left;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+}
+
+.container {
+    background: #647870;
+    background-image: url("/img/bgswirl.png");
+    width: 900px;
+    margin: auto auto;
+    padding: 7px;
+    border: 1px black solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#header {
+    background: white;
+    background-image: url("/img/abouthead.png");
+    width: 883px;
+    height: 125px;
+    padding: 6px 7px;
+    border: 1px black solid;
+}
+
+.banner {
+    width: 900px;
+    height: 25px;
+    margin: 7px 0px;
+}
+#banL {
+    float: left;
+    background: white;
+    width: 38.85%;
+    height: 32px;
+    padding: 2px 3.3px;
+    padding-top: 3px;
+    border: 1px black solid;
+}
+#banM {
+    float: left;
+    background: white;
+    width: 17%;
+    height: 100%;
+    padding: 6px 7px;
+    border: 1px black solid;
+    margin: 0px 7px;
+}
+#banR {
+    float: left;
+    background: white;
+    width: 38.85%;
+    height: 32px;
+    padding: 2px 3.3px;
+    padding-top: 3px;
+    border: 1px black solid;
+}
+
+.one {
+    background: white;
+    padding: 6px 7px;
+    border: 1px black solid;
+    width: 884px;
+    height: 555px;
+    margin: 21px 0px;
+    margin-bottom: 7px;
+}
+
+.rightB {
+    background: white;
+    padding: 6px 7px;
+    border: 1px black solid;
+    width: 736px;
+    height: 88px;
+    margin-bottom: 7px;
+    margin-left: 147px;
+}
+
+.leftB {
+    background: white;
+    padding: 6px 7px;
+    border: 1px black solid;
+    width: 736px;
+    height: 88px;
+    margin-bottom: 7px;
+}
+
+.bottom {
+    background: white;
+    padding: 6px 7px;
+    border: 1px black solid;
+    width: 884px;
+    height: 555px;
+    margin: 7px 0px;
+    margin-bottom: 0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #708680;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+}
+a:hover {
+    color: #415551;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px #8ab4a9, 0px 0px 4px #8ab4a9cc;
+    transition: ease-in-out 0.3s;
+    cursor: url("/img/BRWcur.png"), auto;
+}
+ul {
+    list-style-position: inside;
+    list-style-image: url("/img/ditherB.png");
+}
+li:nth-child(even) {
+    list-style-image: url("/img/ditherB2.png");
+}
+hr {
+    height: 5px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    border-top: 1px dotted #000000;
+}
+::selection {
+    color: #32413d;
+    background: #d5e9e4;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #32413d;
+    background: #d5e9e4;
+}

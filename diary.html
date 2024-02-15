@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archangelism</title>
+    <link href="/diary.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/img/angelico.png">
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+  <body>
+    <div class="container">
+       <div id="left">
+         <div id="leftIN">
+            <iframe id="iframe1" src="/d/page6.html" width="400" height="300"></iframe>
+         </div>
+       </div>
+
+       <div id="right">
+         <div id="rightIN">
+            <iframe id="iframe2" src="/d/page5.html" width="400" height="300"></iframe>
+         </div>
+
+         <a href="/index.html"><img src="/img/DSrosary.png" style="position:relative;top:-725px;left:-650px;cursor:url('/img/THOVcur.png'), auto;" class="slide"></a>
+         <img src="/img/DScherub.png" style="position:relative;top:-1255px;left:-170px;">
+
+         <img src="/img/DScover.png" style="position:relative;top:-1335px;left:163.5px;z-index:-1;">
+         <img src="/img/DSgirl.png" style="position:relative;top:-1097px;left:261px;">
+       </div>
+       <div id="ribbon" onclick="flipPages()"></div>
+    </div>
+</body>
+
+<script>
+    var currentPage = 0; // variable to track the current set of pages
+
+    function flipPages() {
+        var iframeContainer = document.getElementById("iframeContainer");
+
+        // array of page pairs, change based on page URLs
+        var pages = [
+            ["/d/page6.html", "/d/page5.html"],
+            ["/d/page4.html", "/d/page3.html"],
+            ["/d/page2.html", "/d/page1.html"]
+        ];
+
+        // increment current page index or go back to the first set
+        currentPage = (currentPage + 1) % pages.length;
+
+        // update the iframes with the new pages
+        document.getElementById("iframe1").src = pages[currentPage][0];
+        document.getElementById("iframe2").src = pages[currentPage][1];
+    }
+</script>
