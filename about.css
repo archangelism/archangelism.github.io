@@ -74,28 +74,88 @@ body {
     padding: 6px 7px;
     border: 1px black solid;
     width: 884px;
-    height: 555px;
+    height: auto;
     margin: 21px 0px;
     margin-bottom: 7px;
 }
 
 .rightB {
     background: white;
-    padding: 6px 7px;
+    padding: 4px 7px 8px 7px;
     border: 1px black solid;
     width: 736px;
     height: 88px;
     margin-bottom: 7px;
     margin-left: 147px;
 }
-
 .leftB {
     background: white;
-    padding: 6px 7px;
+    padding: 3px 7px 8px 7px;
     border: 1px black solid;
     width: 736px;
     height: 88px;
     margin-bottom: 7px;
+}
+
+.music {
+    background: white;
+    padding: 3.5px 7px 8px 15px;
+    border: 1px black solid;
+    width: 729px;
+    height: 88px;
+    margin-bottom: 7px;
+    margin-left: 147px;
+}
+
+.movies {
+    background: white;
+    padding: 3.5px 40px 8px 7px;
+    border: 1px black solid;
+    width: 725px;
+    height: 88px;
+    margin-bottom: 7px;
+}
+
+.games {
+    background: white;
+    padding: 3.5px 7px 8px 20px;
+    border: 1px black solid;
+    width: 724px;
+    height: 88px;
+    margin-bottom: 7px;
+    margin-left: 147px;
+}
+
+.other {
+    background: white;
+    padding: 3.5px 20px 8px 7px;
+    border: 1px black solid;
+    width: 718px;
+    height: 88px;
+    margin-bottom: 7px;
+}
+
+.bullshit {
+    background: white;
+    padding: 3.5px 7px 8px 47px;
+    border: 1px black solid;
+    width: 697px;
+    height: 88px;
+    margin-bottom: 7px;
+    margin-left: 147px;
+}
+
+.rightB img,
+.leftB img {
+    transition: all ease-in-out .3s;
+}
+
+.rightB img:hover,
+.leftB img:hover {
+    filter: sepia(100%) brightness(150%) hue-rotate(120deg) saturate(70%);
+    -webkit-filter: sepia(100%) brightness(150%) hue-rotate(120deg) saturate(70%);
+    -moz-filter: sepia(100%) brightness(150%) hue-rotate(120deg) saturate(70%);
+    transition: all ease-in-out .3s;
 }
 
 .bottom {
@@ -149,4 +209,7 @@ hr {
 ::-moz-selection { /* Code for Firefox */
     color: #32413d;
     background: #d5e9e4;
+}
+p {
+    margin-top: 10px;
 }
